@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Services</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>💉 Medical & Therapy Services</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="nutrition.html">Nutrition</a>
+      <a href="mental_health.html">Mental Health</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Why Choose Us Section -->
+    <section class="elaborated-services">
+      <h2>Why Choose Us</h2>
+      <ul class="service-benefits">
+        <li>
+          <h3>🕐 24/7 Emergency Services</h3>
+          <p>
+            Our emergency department is equipped with state-of-the-art tech and staffed by pros 24/7. Whether it’s a small scare or something critical, we’ve got your back—anytime.
+          </p>
+        </li>
+        <li>
+          <h3>🏥 Physical Therapy & Rehabilitation</h3>
+          <p>
+            From surgery recovery to injury rehab, our physical therapy experts help you bounce back—stronger and pain-free—with personalized plans.
+          </p>
+        </li>
+        <li>
+          <h3>👨‍⚕️ Doctor Consultation & Diagnostics</h3>
+          <p>
+            Book a consult with top specialists and get quick, accurate results from our in-house labs—all under one comfy roof.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Service Video -->
+    <video autoplay muted loop playsinline width="100%">
+      <source src="media/services.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Doctors Section -->
+    <section class="doctor-list-section">
+      <h2>Meet Our Doctors</h2>
+      <div class="doctor-list">
+
+        <div class="doctor-card">
+          <img src="images/doctor1.jpg" alt="Dr. Ayesha Khan">
+          <h3>Dr. Ayesha Khan</h3>
+          <p>Cardiologist</p>
+          <p>
+            16+ Years Experience<br>
+            MBBS, MD (Medicine), DM (Cardiology), Fellowship in Cardiac Electrophysiology (SCTIMST), Certified by IBHRE, USA.
+          </p>
+        </div>
+
+        <div class="doctor-card">
+          <img src="images/doctor2.jpg" alt="Dr. Samir Patel">
+          <h3>Dr. Samir Patel</h3>
+          <p>Neurologist</p>
+          <p>
+            17+ Years Experience<br>
+            MBBS, MD, DNB [Gen & Card], Fellowship in Electrophysiology, Certified Cardiac Device Specialist (IBHRE, USA).
+          </p>
+        </div>
+
+        <div class="doctor-card">
+          <img src="images/doctor3.jpg" alt="Dr. Lina Mathews">
+          <h3>Dr. Lina Mathews</h3>
+          <p>Pediatrician</p>
+          <p>
+            12+ Years Experience<br>
+            MBBS, MS (Ortho), FNB (Hand Surgery) | Pediatric-Orthopedic Surgeon
+          </p>
+        </div>
+
+      
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Patient Stories Slider -->
+  <section class="patient-slider">
+    <h2>Patient Stories</h2>
+    <div class="slider-track">
+
+      <div class="slide">
+        <img src="images/patient1.jpg" alt="Happy Patient">
+      </div>
+
+      <div class="slide">
+        <video autoplay loop muted>
+          <source src="media/patient1.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="slide">
+        <img src="images/patient2.jpg" alt="Smiling Patient">
+      </div>
+
+      <div class="slide">
+        <video autoplay loop muted>
+          <source src="media/patient2.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Repeat for infinite effect -->
+      <div class="slide">
+        <img src="images/patient1.jpg" alt="Happy Patient">
+      </div>
+
+      <div class="slide">
+        <video autoplay loop muted>
+          <source src="media/patient1.mp4" type="video/mp4">
+        </video>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+
+      <div class="faq-item">
+        <button class="faq-question">What services does MediCare Center provide?</button>
+        <div class="faq-answer">
+          <p>We provide emergency care, specialist consults, lab diagnostics, wellness, mental health support, and more.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Do I need an appointment to visit?</button>
+        <div class="faq-answer">
+          <p>Walk-ins are totally fine, but appointments help you skip the wait and get straight to your doc.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Do you offer online consultations?</button>
+        <div class="faq-answer">
+          <p>Yep! Book secure video consults via our website or mobile app—your doc, your couch.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Are your services covered by insurance?</button>
+        <div class="faq-answer">
+          <p>We accept most major insurance providers. Just check at the front desk or our site to confirm your plan.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Callback Section -->
+  <section class="callback-section">
+    <div class="callback-card">
+      <div class="callback-form" id="callbackForm">
+        <h2>Request a Call Back</h2>
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="tel" id="phone" placeholder="Mobile Number" required>
+        <button onclick="submitCallback()">Submit</button>
+      </div>
+      <div class="thank-you" id="thankYouMessage">
+        <h3>Thank you for your response! ❤️</h3>
+        <p>Our team will contact you shortly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Vijai</p>
+  </footer>
+
+</body>
+</html>

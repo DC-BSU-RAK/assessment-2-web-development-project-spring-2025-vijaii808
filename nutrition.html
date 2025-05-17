@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nutrition & Wellness</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 🔹 Header -->
+  <header>
+    <h1>🥗 Healthy Eating for a Healthy Life</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="nutrition.html">Nutrition</a>
+      <a href="mental_health.html">Mental Health</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- 🥦 Nutrition Introduction -->
+    <section class="nutrition-intro">
+      <p>
+        Balanced nutrition is not just about eating the right foods — it's about creating a lifestyle that is supportive of your physical, emotional, and mental well-being.
+        We truly believe here at our medical center that food is one of the most powerful medicines.
+      </p>
+      <p>
+        Our team of expert dietitians and nutritionists has worked hard to craft a collection of easy-to-follow meal plans and daily tips tailored for all kinds of health goals.
+        Whether you're managing chronic conditions like diabetes, aiming for weight loss, recovering from an illness, or just striving to feel more energetic and focused — we’ve got you covered.
+      </p>
+      <p>
+        Find healthy recipes, learn to balance your plate, and learn the facts about daily food myths,
+        and find advice that fits your life — not someone else's. From plant-based diets and low-carb to heart-healthy meals and immunity boosters,
+      our guidance is practical, personal, and rooted in science.
+      </p>
+      <p>
+        Begin on a small scale, and then keep to that level of doing while savoring every bitesize. Functional food should not make you feel as if you are being punished for your indulgences.
+        It is really about the self-care, delight, and giving strength to the body.🌱🍎
+
+      </p>
+      <div class="centered-img">
+        <img src="images/food.jpg" alt="Colorful nutritious food plate" width="100%">
+      </div>
+    </section>
+
+    <!-- 🔍 Explore Nutrients -->
+    <section class="nutrient-section">
+      <h2>🔍 Explore Nutrients</h2>
+      <p>Type or select a nutrient to learn how it supports your health.</p>
+
+      <div class="nutrient-search-box">
+        <input type="text" id="nutrientInput" placeholder="Enter nutrient name (e.g. Protein, Iron)">
+        <button onclick="showNutrientInfo()">Search</button>
+      </div>
+
+      <div class="nutrient-dropdown">
+        <select id="nutrientSelect" onchange="selectNutrientInfo()">
+          <option value="">-- Or select from list --</option>
+          <option value="Protein">Protein</option>
+          <option value="Carbohydrates">Carbohydrates</option>
+          <option value="Fats">Fats</option>
+          <option value="Vitamin C">Vitamin C</option>
+          <option value="Iron">Iron</option>
+          <option value="Calcium">Calcium</option>
+        </select>
+      </div>
+
+      <div id="nutrientOutput" class="nutrient-output-box"></div>
+    </section>
+
+    <!-- ❗ Deficiency Diseases -->
+    <section class="deficiency-diseases">
+      <h2>💔 Diseases Caused by Nutrient Deficiencies</h2>
+      <div class="disease-boxes">
+
+        <div class="disease-card">
+          <img src="images/rickets.jpg" alt="Child with bowed legs from rickets">
+          <h3>Rickets</h3>
+          <p>Caused by Vitamin D deficiency, leading to weak or soft bones in children.</p>
+          <button>Read More</button>
+        </div>
+
+        <div class="disease-card">
+          <img src="images/scurvy.jpg" alt="Swollen gums from scurvy">
+          <h3>Scurvy</h3>
+          <p>Vitamin C deficiency disease causing fatigue, swollen gums, and bruising.</p>
+          <button>Read More</button>
+        </div>
+
+        <div class="disease-card">
+          <img src="images/anemia.jpg" alt="Fatigued woman with anemia">
+          <h3>Anemia</h3>
+          <p>Iron deficiency causes fatigue and weakness due to low red blood cell count.</p>
+          <button>Read More</button>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 🔻 Footer -->
+  <footer>
+    <p>&copy; 2025 Vijair</p>
+  </footer>
+  </body>
+  </html>
